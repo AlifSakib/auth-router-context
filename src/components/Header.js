@@ -6,14 +6,20 @@ const Header = () => {
     <div>
       <div className="navbar bg-primary text-primary-content flex justify-between px-16 font-lora">
         <div>
-          <a className="btn btn-ghost normal-case text-xl" href="/">
-            daisyUI
-          </a>
+          <Link to="/" className="btn btn-ghost normal-case text-xl" href="/">
+            Firebase Auth
+          </Link>
         </div>
         <div className="space-x-8">
-          <Link to="/">Home</Link>
-          <Link to="/login">Login</Link>
-          <Link to="/register">Register</Link>
+          <Link className="btn btn-ghost normal-case text-xl" to="/">
+            Home
+          </Link>
+          <Link className="btn btn-ghost normal-case text-xl" to="/login">
+            Login
+          </Link>
+          <Link className="btn btn-ghost normal-case text-xl" to="/register">
+            Register
+          </Link>
         </div>
       </div>
     </div>
